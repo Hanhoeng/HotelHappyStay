@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30709.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HotelHappyStay", "HotelHappyStay.vbproj", "{6775C0FA-8957-4237-9FF3-C08D1433EB12}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ClasesHotelHappyStay", "..\ClasesHotelHappyStay\ClasesHotelHappyStay.vbproj", "{77AD466C-A4EA-411E-A51E-16C65AB3F247}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6775C0FA-8957-4237-9FF3-C08D1433EB12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6775C0FA-8957-4237-9FF3-C08D1433EB12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6775C0FA-8957-4237-9FF3-C08D1433EB12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6775C0FA-8957-4237-9FF3-C08D1433EB12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77AD466C-A4EA-411E-A51E-16C65AB3F247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77AD466C-A4EA-411E-A51E-16C65AB3F247}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77AD466C-A4EA-411E-A51E-16C65AB3F247}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77AD466C-A4EA-411E-A51E-16C65AB3F247}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A821F08E-A3E1-4B29-8878-C4CE43ED0CE8}
+	EndGlobalSection
+EndGlobal
