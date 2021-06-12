@@ -1,0 +1,57 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Main.master.vb" Inherits="HotelHappyStay.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 488px;
+        }
+        .auto-style2 {
+            width: 180px;
+        }
+        .auto-style3 {
+            width: 180px;
+            height: 151px;
+        }
+        .auto-style4 {
+            height: 151px;
+            font-weight: bold;
+            font-size: xx-large;
+            text-align: center;
+        }
+        .auto-style5 {
+            width: 202px;
+            height: 179px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style3">
+                    <img alt="" class="auto-style5" src="../Images/hotelicon.png" /></td>
+                <td class="auto-style4">Happy Hotel Stay</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

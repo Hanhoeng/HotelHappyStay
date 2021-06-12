@@ -8,16 +8,16 @@
     </ProductVersion>
     <SchemaVersion>
     </SchemaVersion>
-    <ProjectGuid>{6775C0FA-8957-4237-9FF3-C08D1433EB12}</ProjectGuid>
+    <ProjectGuid>{94940A91-C612-4427-BD19-DEA101BC7A58}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>HotelHappyStay</RootNamespace>
-    <AssemblyName>HotelHappyStay</AssemblyName>
+    <RootNamespace>Prueba</RootNamespace>
+    <AssemblyName>Prueba</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MyType>Custom</MyType>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44369</IISExpressSSLPort>
+    <IISExpressSSLPort>44340</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -29,7 +29,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\</OutputPath>
-    <DocumentationFile>HotelHappyStay.xml</DocumentationFile>
+    <DocumentationFile>Prueba.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -38,7 +38,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\</OutputPath>
-    <DocumentationFile>HotelHappyStay.xml</DocumentationFile>
+    <DocumentationFile>Prueba.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
@@ -58,6 +58,8 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -83,7 +85,6 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\hotelicon.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -105,55 +106,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <Compile Include="WebPages\Factura.aspx.designer.vb">
-      <DependentUpon>Factura.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebPages\Factura.aspx.vb">
-      <DependentUpon>Factura.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="WebPages\Habitaciones.aspx.designer.vb">
-      <DependentUpon>Habitaciones.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebPages\Habitaciones.aspx.vb">
-      <DependentUpon>Habitaciones.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="WebPages\Huespedes.aspx.designer.vb">
-      <DependentUpon>Huespedes.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebPages\Huespedes.aspx.vb">
-      <DependentUpon>Huespedes.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="WebPages\InicioSesion.aspx.designer.vb">
-      <DependentUpon>InicioSesion.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebPages\InicioSesion.aspx.vb">
-      <DependentUpon>InicioSesion.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="WebPages\Main.Master.designer.vb">
-      <DependentUpon>Main.Master</DependentUpon>
-    </Compile>
-    <Compile Include="WebPages\Main.Master.vb">
-      <DependentUpon>Main.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebPages\Menu.aspx.designer.vb">
-      <DependentUpon>Menu.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebPages\Menu.aspx.vb">
-      <DependentUpon>Menu.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="WebPages\Menu.Master.designer.vb">
-      <DependentUpon>Menu.Master</DependentUpon>
-    </Compile>
-    <Compile Include="WebPages\Menu.Master.vb">
-      <DependentUpon>Menu.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -180,19 +132,6 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="WebPages\Factura.aspx" />
-    <Content Include="WebPages\Habitaciones.aspx" />
-    <Content Include="WebPages\Huespedes.aspx" />
-    <Content Include="WebPages\InicioSesion.aspx" />
-    <Content Include="WebPages\Main.Master" />
-    <Content Include="WebPages\Menu.aspx" />
-    <Content Include="WebPages\Menu.Master" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ClassHotelHappyStay\ClassHotelHappyStay.vbproj">
-      <Project>{94b9e3a4-45ff-498b-b92a-f7b5deac4f31}</Project>
-      <Name>ClassHotelHappyStay</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -219,9 +158,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>51408</DevelopmentServerPort>
+          <DevelopmentServerPort>53034</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44369/</IISUrl>
+          <IISUrl>https://localhost:44340/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

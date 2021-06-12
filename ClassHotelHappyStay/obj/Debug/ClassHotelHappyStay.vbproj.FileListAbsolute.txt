@@ -1,0 +1,10 @@
+C:\Users\sephi\OneDrive\Desktop\escuela 2.0\MANZA\Nueva carpeta\HotelHappyStay\ClassHotelHappyStay\bin\Debug\ClassHotelHappyStay.dll
+C:\Users\sephi\OneDrive\Desktop\escuela 2.0\MANZA\Nueva carpeta\HotelHappyStay\ClassHotelHappyStay\bin\Debug\ClassHotelHappyStay.pdb
+C:\Users\sephi\OneDrive\Desktop\escuela 2.0\MANZA\Nueva carpeta\HotelHappyStay\ClassHotelHappyStay\bin\Debug\ClassHotelHappyStay.xml
+C:\Users\sephi\OneDrive\Desktop\escuela 2.0\MANZA\Nueva carpeta\HotelHappyStay\ClassHotelHappyStay\obj\Debug\ClassHotelHappyStay.vbprojAssemblyReference.cache
+C:\Users\sephi\OneDrive\Desktop\escuela 2.0\MANZA\Nueva carpeta\HotelHappyStay\ClassHotelHappyStay\obj\Debug\ClassHotelHappyStay.Resources.resources
+C:\Users\sephi\OneDrive\Desktop\escuela 2.0\MANZA\Nueva carpeta\HotelHappyStay\ClassHotelHappyStay\obj\Debug\ClassHotelHappyStay.vbproj.GenerateResource.cache
+C:\Users\sephi\OneDrive\Desktop\escuela 2.0\MANZA\Nueva carpeta\HotelHappyStay\ClassHotelHappyStay\obj\Debug\ClassHotelHappyStay.vbproj.CoreCompileInputs.cache
+C:\Users\sephi\OneDrive\Desktop\escuela 2.0\MANZA\Nueva carpeta\HotelHappyStay\ClassHotelHappyStay\obj\Debug\ClassHotelHappyStay.dll
+C:\Users\sephi\OneDrive\Desktop\escuela 2.0\MANZA\Nueva carpeta\HotelHappyStay\ClassHotelHappyStay\obj\Debug\ClassHotelHappyStay.xml
+C:\Users\sephi\OneDrive\Desktop\escuela 2.0\MANZA\Nueva carpeta\HotelHappyStay\ClassHotelHappyStay\obj\Debug\ClassHotelHappyStay.pdb
