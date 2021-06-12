@@ -17,6 +17,7 @@ GO
 CREATE TABLE [habitacion] (
   [id] int PRIMARY KEY IDENTITY(1, 1),
   [numero] nvarchar(10),
+  [sucursal] nvarchar(25),
   [tipo] nvarchar(10)
 )
 GO

@@ -4,6 +4,7 @@ Imports System.Data.SqlClient
 Public Class habitacion
     Private _id As Integer
     Private _numero As Integer
+    Private _sucursal As String
     Private _tipo As String
 
     Public Property id As Integer
@@ -20,6 +21,14 @@ Public Class habitacion
         End Get
         Set(value As Integer)
             _numero = value
+        End Set
+    End Property
+    Public Property sucursal As String
+        Get
+            Return _sucursal
+        End Get
+        Set(value As String)
+            _sucursal = value
         End Set
     End Property
     Public Property tipo As String
@@ -92,15 +101,21 @@ Public Class habitacion
         cmd.ExecuteScalar()
         cnx.Close()
     End Function
-    Public Function Disponibilidad() As Boolean
+    Public Function Disponibilidad(check_in, check_out) As Boolean
         Dim estado As Boolean
         Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
-        Dim cmd As New SqlCommand("dbo.modify_habitacion", cnx)
+        Dim cmd As New SqlCommand("dbo.get_habitacion_avalability", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add(New SqlParameter("@id", id))
+        cmd.Parameters.Add(New SqlParameter("@check_in", check_in))
+        cmd.Parameters.Add(New SqlParameter("@check_out", check_out))
         cnx.Open()
         estado = cmd.ExecuteScalar()
+        console.writeline(estado)
         cnx.Close()
-        Return estado
+        If estado Then 
+            Return estado
+        Else
+            Return False
     End Function
 End Class

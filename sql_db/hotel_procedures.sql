@@ -27,7 +27,7 @@ go
 
 create procedure validate_user(@name varchar(255), @pswd varchar(255)) as
 begin
-	return select type from users where name=@name and pswd=@pswd;
+	return select id, type from users where name=@name and pswd=@pswd;
 end
 go
 
@@ -35,9 +35,10 @@ drop procedure if exists get_time_stamp;
 drop procedure if exists start_time_stamp;
 drop procedure if exists end_time_stamp;
 drop procedure if exists modify_time_stamp;
+drop procedure if exists delete_time_stamp;
 go
 
-create procedure get_time_stamps(@user_id integer) as
+create procedure get_time_stamp(@user_id integer) as
 begin
 	return select * from time_stamp where user_id=@user_id;
 end
@@ -61,7 +62,7 @@ begin
 end
 go
 
-drop procedure if exists get_reservacion_by_user;
+drop procedure if exists get_reservacion_by_huesped;
 drop procedure if exists get_reservacion_by_date;
 drop procedure if exists create_reservacion;
 drop procedure if exists delete_reservacion;
@@ -76,7 +77,7 @@ go
 
 create procedure get_reservacion_by_date(@in_date datetime, @out_date datetime) as
 begin
-	return select * from reservacion where in_date=@in_date, out_date=@out_date;
+	return select * from reservacion where in_date=@in_date and out_date=@out_date;
 end
 go
 
@@ -98,7 +99,9 @@ begin
 end
 go
 
-drop procedure if exists get_huesped;
+drop procedure if exists get_huesped_by_id;
+drop procedure if exists get_huesped_by_name;
+drop procedure if exists get_huesped_by_phone;
 drop procedure if exists create_huesped;
 drop procedure if exists delete_huesped;
 drop procedure if exists modify_huesped;
@@ -120,7 +123,7 @@ create procedure get_huesped_by_phone(@phone varchar(255)) as
 begin
 	select * from huesped where telefono=@phone;
 end
-go straight
+go
 
 create procedure create_huesped(@nombre varchar(255), @telefono varchar(255), @tipo varchar(255)) as
 begin
@@ -152,14 +155,14 @@ begin
 end
 go
 
-create procedure get_habitacion_avalability(@id integer, check_in datetime, check_out datetime) as
+create procedure get_habitacion_avalability(@id integer, @check_in datetime, @check_out datetime) as
 begin
 	return select * from reservacion where hab_id=@id and (
-    check_in between in_date and out_date
+    @check_in between in_date and out_date
     OR
-    check_out between in_date and out_date
+    @check_out between in_date and out_date
     OR
-    in_date between check_in and check_out);
+    in_date between @check_in and @check_out);
 end
 go
 

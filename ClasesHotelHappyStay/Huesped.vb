@@ -127,7 +127,7 @@ Public Class Huesped
         Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.create_huesped", cnx)
         cmd.CommandType = CommandType.StoredProcedure
-        cmd.Parameters.Add(New SqlParameter("@Nombre", _Nombre))
+        cmd.Parameters.Add(New SqlParameter("@nombre", _Nombre))
         cmd.Parameters.Add(New SqlParameter("@telefono", _telefono))
         cmd.Parameters.Add(New SqlParameter("@tipo", _tipo))
         cnx.Open()
@@ -140,7 +140,7 @@ Public Class Huesped
         Dim cmd As New SqlCommand("dbo.modify_huesped", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add(New SqlParameter("@id", _id))
-        cmd.Parameters.Add(New SqlParameter("@Nombre", _Nombre))
+        cmd.Parameters.Add(New SqlParameter("@nombre", _Nombre))
         cmd.Parameters.Add(New SqlParameter("@telefono", _telefono))
         cmd.Parameters.Add(New SqlParameter("@tipo", _tipo))
         cnx.Open()

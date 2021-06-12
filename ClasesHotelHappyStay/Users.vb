@@ -42,19 +42,37 @@ Public Class Users
 
     Public Function IniciarSesion() As Integer
         Dim existe As New Integer
-        Dim tipoUser As String
         Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.validate_user", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add(New SqlParameter("@name", _name))
         cmd.Parameters.Add(New SqlParameter("@pswd", _pswd))
         cnx.Open()
-        tipoUser = cmd.ExecuteScalar()
-        cnx.Close()
-        _type = tipoUser
-        Return tipoUser
-    End Function
+        Dim leer As SqlDataReader
+        leer = cmd.ExecuteReader
+        If leer.Read() Then
+            _id = leer(0).ToString()
+            _type = leer(0).ToString()
 
+            Dim cmd As New SqlCommand("dbo.start_time_stamp", cnx)
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Parameters.Add(New SqlParameter("@user_id", _id))
+            cmd.ExecuteScalar()
+            cnx.Close()
+            Return _type
+        Else
+            Return False
+            cnx.Close()
+    End Function
+    Public Function CerrarSesion() As Integer
+        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cmd As New SqlCommand("dbo.end_time_stamp", cnx)
+        cmd.CommandType = CommandType.StoredProcedure
+        cmd.Parameters.Add(New SqlParameter("@user_id", _id))
+        cnx.Open()
+        cmd.ExecuteScalar()
+        cnx.Close()
+    End Function
     Public Function AltaUsuario() As Boolean
         Dim existe As New Integer
         Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
