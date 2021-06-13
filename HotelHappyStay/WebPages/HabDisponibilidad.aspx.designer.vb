@@ -11,59 +11,77 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Formulario_web11
+Partial Public Class HabDisponibilidad
 
     '''<summary>
-    '''Control btnConsultarHab.
+    '''Control lblID.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnConsultarHab As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents lblID As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control btnNuevoHab.
+    '''Control lblCheckIn.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnNuevoHab As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents lblCheckIn As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control btnDisponibilidad.
+    '''Control txtID.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnDisponibilidad As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents txtID As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control btnEliminar.
+    '''Control lblCheckOut.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnEliminar As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents lblCheckOut As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control btnModificarHab.
+    '''Control txtCheckIn.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnModificarHab As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents txtCheckIn As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control btnRegresarHab.
+    '''Control txtCheckOut.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnRegresarHab As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents txtCheckOut As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control btnRevisar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btnRevisar As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control btnRegresar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btnRegresar As Global.System.Web.UI.WebControls.Button
 End Class

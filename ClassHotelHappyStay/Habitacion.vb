@@ -97,11 +97,12 @@ Public Class habitacion
         cmd.Parameters.Add(New SqlParameter("@id", id))
         cmd.Parameters.Add(New SqlParameter("@numero", numero))
         cmd.Parameters.Add(New SqlParameter("@tipo", tipo))
+        cmd.Parameters.Add(New SqlParameter("@sucursal", sucursal))
         cnx.Open()
         cmd.ExecuteScalar()
         cnx.Close()
     End Function
-    Public Function Disponibilidad(check_in, check_out) As Boolean
+    Public Function Disponibilidad(check_in As DateTime, check_out As DateTime) As Boolean
         Dim estado As Boolean
         Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.get_habitacion_avalability", cnx)
@@ -111,7 +112,7 @@ Public Class habitacion
         cmd.Parameters.Add(New SqlParameter("@check_out", check_out))
         cnx.Open()
         estado = cmd.ExecuteScalar()
-        console.writeline(estado)
+        Console.WriteLine(estado)
         cnx.Close()
         If estado Then
             Return True

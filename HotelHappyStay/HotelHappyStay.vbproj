@@ -86,6 +86,11 @@
     <Content Include="Images\hotelicon.png" />
     <Content Include="Web.config" />
     <Content Include="WebPages\FacEliminar.aspx" />
+    <Content Include="WebPages\HabConsultar.aspx" />
+    <Content Include="WebPages\HabDisponibilidad.aspx" />
+    <Content Include="WebPages\HabEliminar.aspx" />
+    <Content Include="WebPages\HabModificar.aspx" />
+    <Content Include="WebPages\HabNuevo.aspx" />
     <Content Include="WebPages\Reservacion.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -143,11 +148,46 @@
       <DependentUpon>FacNuevo.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="WebPages\HabConsultar.aspx.designer.vb">
+      <DependentUpon>HabConsultar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\HabConsultar.aspx.vb">
+      <DependentUpon>HabConsultar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\HabDisponibilidad.aspx.designer.vb">
+      <DependentUpon>HabDisponibilidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\HabDisponibilidad.aspx.vb">
+      <DependentUpon>HabDisponibilidad.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\HabEliminar.aspx.designer.vb">
+      <DependentUpon>HabEliminar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\HabEliminar.aspx.vb">
+      <DependentUpon>HabEliminar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="WebPages\Habitaciones.aspx.designer.vb">
       <DependentUpon>Habitaciones.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebPages\Habitaciones.aspx.vb">
       <DependentUpon>Habitaciones.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\HabModificar.aspx.designer.vb">
+      <DependentUpon>HabModificar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\HabModificar.aspx.vb">
+      <DependentUpon>HabModificar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\HabNuevo.aspx.designer.vb">
+      <DependentUpon>HabNuevo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\HabNuevo.aspx.vb">
+      <DependentUpon>HabNuevo.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="WebPages\Huespedes.aspx.designer.vb">

@@ -11,34 +11,25 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Formulario_web11
+Partial Public Class HabEliminar
 
     '''<summary>
-    '''Control btnConsultarHab.
+    '''Control lblID.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnConsultarHab As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents lblID As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control btnNuevoHab.
+    '''Control txtID.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnNuevoHab As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''Control btnDisponibilidad.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents btnDisponibilidad As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents txtID As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Control btnEliminar.
@@ -50,20 +41,11 @@ Partial Public Class Formulario_web11
     Protected WithEvents btnEliminar As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Control btnModificarHab.
+    '''Control btnRegresar.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnModificarHab As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''Control btnRegresarHab.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents btnRegresarHab As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents btnRegresar As Global.System.Web.UI.WebControls.Button
 End Class

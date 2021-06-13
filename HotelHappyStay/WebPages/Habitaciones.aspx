@@ -3,8 +3,8 @@
     <style type="text/css">
         .auto-style6 {
             position: absolute;
-            top: 561px;
-            left: 615px;
+            top: 559px;
+            left: 489px;
             z-index: 1;
         }
         .auto-style7 {
@@ -32,11 +32,11 @@
             z-index: 1;
         }
         .auto-style11 {
-            position: absolute;
-            top: 280px;
-            left: 620px;
-            z-index: 1;
-        }
+        position: absolute;
+        top: 369px;
+        left: 782px;
+        z-index: 1;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -45,11 +45,7 @@
     <p>
         &nbsp;</p>
     <p>
-        <asp:DropDownList ID="DropDownList1" runat="server" CssClass="auto-style11" Font-Bold="True" Font-Size="Large">
-            <asp:ListItem>Sucursal1</asp:ListItem>
-            <asp:ListItem>Sucursal2</asp:ListItem>
-        </asp:DropDownList>
-    </p>
+        &nbsp;</p>
     <p>
     </p>
     <p>
@@ -57,6 +53,7 @@
     <asp:Button ID="btnConsultarHab" runat="server" CssClass="auto-style9" Font-Bold="True" Font-Size="Large" Text="Consultar" />
     <p>
         <asp:Button ID="btnNuevoHab" runat="server" CssClass="auto-style7" Font-Bold="True" Font-Size="Large" Text="Nuevo" />
+        <asp:Button ID="btnDisponibilidad" runat="server" CssClass="auto-style11" Font-Bold="True" Font-Size="Large" Text="Disponibilidad" />
     </p>
     <p>
     </p>
