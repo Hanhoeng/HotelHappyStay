@@ -2,15 +2,88 @@
 Imports System.Data.SqlClient
 
 Public Class Reservacion
-    Public Property id As Integer
+    Private _ide As Integer
+    Private _user_id As Integer
+    Private _huesped_id As Integer
+    Private _hab_id As Integer
+    Private _factura_id As Integer
+    Private _in_date As DateTime
+    Private _out_date As DateTime
+    Private _status As String
+    Private _observaciones As String
+
+    Public Property ide As Integer
+        Get
+            Return _ide
+        End Get
+        Set(value As Integer)
+            _ide = value
+        End Set
+    End Property
     Public Property user_id As Integer
+        Get
+            Return _user_id
+        End Get
+        Set(value As Integer)
+            _user_id = value
+        End Set
+    End Property
     Public Property huesped_id As Integer
+        Get
+            Return _huesped_id
+        End Get
+        Set(value As Integer)
+            _huesped_id = value
+        End Set
+    End Property
     Public Property hab_id As Integer
+        Get
+            Return _hab_id
+        End Get
+        Set(value As Integer)
+            _hab_id = value
+        End Set
+    End Property
     Public Property factura_id As Integer
-    Public Property in_date As Date
-    Public Property out_date As Date
+        Get
+            Return _factura_id
+        End Get
+        Set(value As Integer)
+            _factura_id = value
+        End Set
+    End Property
+    Public Property in_date As DateTime
+        Get
+            Return _in_date
+        End Get
+        Set(value As DateTime)
+            _in_date = value
+        End Set
+    End Property
+    Public Property out_date As DateTime
+        Get
+            Return _out_date
+        End Get
+        Set(value As DateTime)
+            _out_date = value
+        End Set
+    End Property
     Public Property status As String
+        Get
+            Return _status
+        End Get
+        Set(value As String)
+            _status = value
+        End Set
+    End Property
     Public Property observaciones As String
+        Get
+            Return _observaciones
+        End Get
+        Set(value As String)
+            _observaciones = value
+        End Set
+    End Property
 
     Public Function ReservacionConsultaHuesped() As Boolean
         Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
@@ -35,7 +108,7 @@ Public Class Reservacion
             stat = leer(7).ToString
             obser = leer(8).ToString
 
-            id = id
+            ide = ide
             user_id = uide
             huesped_id = hide
             hab_id = haide
@@ -76,7 +149,7 @@ Public Class Reservacion
             stat = leer(7).ToString
             obser = leer(8).ToString
 
-            id = id
+            ide = ide
             user_id = uide
             huesped_id = hide
             hab_id = haide
@@ -115,7 +188,7 @@ Public Class Reservacion
         Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.modify_reservacion", cnx)
         cmd.CommandType = CommandType.StoredProcedure
-        cmd.Parameters.Add(New SqlParameter("@id", id))
+        cmd.Parameters.Add(New SqlParameter("@id", ide))
         cmd.Parameters.Add(New SqlParameter("@user_id", user_id))
         cmd.Parameters.Add(New SqlParameter("@huesped_id", huesped_id))
         cmd.Parameters.Add(New SqlParameter("@hab_id", hab_id))
@@ -133,7 +206,7 @@ Public Class Reservacion
         Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.delete_reservacion", cnx)
         cmd.CommandType = CommandType.StoredProcedure
-        cmd.Parameters.Add(New SqlParameter("@id", _id))
+        cmd.Parameters.Add(New SqlParameter("@id", _ide))
         cnx.Open()
         cmd.ExecuteScalar()
         cnx.Close()

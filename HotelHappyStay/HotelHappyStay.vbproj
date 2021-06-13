@@ -91,7 +91,10 @@
     <Content Include="WebPages\HabEliminar.aspx" />
     <Content Include="WebPages\HabModificar.aspx" />
     <Content Include="WebPages\HabNuevo.aspx" />
+    <Content Include="WebPages\ResCrear.aspx" />
+    <Content Include="WebPages\ResEliminar.aspx" />
     <Content Include="WebPages\Reservacion.aspx" />
+    <Content Include="WebPages\ResModificar.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -225,11 +228,32 @@
       <DependentUpon>Menu.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="WebPages\ResCrear.aspx.designer.vb">
+      <DependentUpon>ResCrear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\ResCrear.aspx.vb">
+      <DependentUpon>ResCrear.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\ResEliminar.aspx.designer.vb">
+      <DependentUpon>ResEliminar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\ResEliminar.aspx.vb">
+      <DependentUpon>ResEliminar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="WebPages\Reservacion.aspx.designer.vb">
       <DependentUpon>Reservacion.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebPages\Reservacion.aspx.vb">
       <DependentUpon>Reservacion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\ResModificar.aspx.designer.vb">
+      <DependentUpon>ResModificar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\ResModificar.aspx.vb">
+      <DependentUpon>ResModificar.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>

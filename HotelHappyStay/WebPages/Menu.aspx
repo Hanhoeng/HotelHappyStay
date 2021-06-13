@@ -4,33 +4,31 @@
     .auto-style5 {
         position: absolute;
         top: 367px;
-        left: 54px;
+        left: 39px;
         z-index: 1;
     }
     .auto-style6 {
         position: absolute;
         top: 367px;
-        left: 306px;
+        left: 232px;
         z-index: 1;
     }
     .auto-style7 {
         position: absolute;
         top: 369px;
-        left: 587px;
+        left: 448px;
         z-index: 1;
-    }
-    .auto-style8 {
-        position: absolute;
-        top: 495px;
-        left: 809px;
-        z-index: 1;
-        width: 90px;
-        height: 37px;
     }
         .auto-style9 {
             position: absolute;
             top: 370px;
-            left: 786px;
+            left: 606px;
+            z-index: 1;
+        }
+        .auto-style10 {
+            position: absolute;
+            top: 372px;
+            left: 842px;
             z-index: 1;
         }
     </style>
@@ -51,10 +49,10 @@
 <p>
     &nbsp;</p>
 <p>
-    <asp:Button ID="btnSalir" runat="server" CssClass="auto-style8" Font-Bold="True" Font-Size="Large" Text="Salir" />
-</p>
-<p>
     &nbsp;</p>
+<p>
+    <asp:Button ID="btnUsuarios" runat="server" CssClass="auto-style10" Font-Bold="True" Font-Size="Large" Text="Usuarios" />
+    </p>
 <p>
     <asp:Button ID="btnHuespedes" runat="server" CssClass="auto-style5" Font-Bold="True" Font-Italic="False" Font-Size="Large" Text="Huespedes" />
     <asp:Button ID="btnHabitacion" runat="server" CssClass="auto-style6" Font-Bold="True" Font-Size="Large" Text="Habitaciones" />
