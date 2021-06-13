@@ -11,50 +11,41 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Formulario_web1
+Partial Public Class FacEliminar
 
     '''<summary>
-    '''Control btnNuevo.
+    '''Control lblID.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnNuevo As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents lblID As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control btnModificar.
+    '''Control btnEliminar.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnModificar As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents btnEliminar As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Control btnBorrar.
+    '''Control btnRegresar.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnBorrar As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents btnRegresar As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Control btnConsultar.
+    '''Control txtID.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnConsultar As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''Control btnRegresa.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents btnRegresa As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents txtID As Global.System.Web.UI.WebControls.TextBox
 End Class

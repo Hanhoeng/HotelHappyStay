@@ -11,50 +11,59 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Formulario_web1
+Partial Public Class Formulario_web13
 
     '''<summary>
-    '''Control btnNuevo.
+    '''Control drlTipo.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnNuevo As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents drlTipo As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Control btnModificar.
+    '''Control lblTipo.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnModificar As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents lblTipo As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control btnBorrar.
+    '''Control lblMonto.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnBorrar As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents lblMonto As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control btnConsultar.
+    '''Control txtMonto.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnConsultar As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents txtMonto As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control btnRegresa.
+    '''Control btnFacGuardar.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnRegresa As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents btnFacGuardar As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control btnRegFac.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btnRegFac As Global.System.Web.UI.WebControls.Button
 End Class
