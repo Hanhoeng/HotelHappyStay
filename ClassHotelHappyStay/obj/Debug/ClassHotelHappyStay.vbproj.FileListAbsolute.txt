@@ -7,3 +7,13 @@ C:\Users\sephi\OneDrive\Desktop\escuela 2.0\MANZA\Nueva carpeta\HotelHappyStay\C
 C:\Users\sephi\OneDrive\Desktop\escuela 2.0\MANZA\Nueva carpeta\HotelHappyStay\ClassHotelHappyStay\obj\Debug\ClassHotelHappyStay.dll
 C:\Users\sephi\OneDrive\Desktop\escuela 2.0\MANZA\Nueva carpeta\HotelHappyStay\ClassHotelHappyStay\obj\Debug\ClassHotelHappyStay.xml
 C:\Users\sephi\OneDrive\Desktop\escuela 2.0\MANZA\Nueva carpeta\HotelHappyStay\ClassHotelHappyStay\obj\Debug\ClassHotelHappyStay.pdb
+C:\Users\mario\Documents\2020_1\programacion_lll\HotelHappyStay\ClassHotelHappyStay\bin\Debug\ClassHotelHappyStay.dll
+C:\Users\mario\Documents\2020_1\programacion_lll\HotelHappyStay\ClassHotelHappyStay\bin\Debug\ClassHotelHappyStay.pdb
+C:\Users\mario\Documents\2020_1\programacion_lll\HotelHappyStay\ClassHotelHappyStay\bin\Debug\ClassHotelHappyStay.xml
+C:\Users\mario\Documents\2020_1\programacion_lll\HotelHappyStay\ClassHotelHappyStay\obj\Debug\ClassHotelHappyStay.vbprojAssemblyReference.cache
+C:\Users\mario\Documents\2020_1\programacion_lll\HotelHappyStay\ClassHotelHappyStay\obj\Debug\ClassHotelHappyStay.Resources.resources
+C:\Users\mario\Documents\2020_1\programacion_lll\HotelHappyStay\ClassHotelHappyStay\obj\Debug\ClassHotelHappyStay.vbproj.GenerateResource.cache
+C:\Users\mario\Documents\2020_1\programacion_lll\HotelHappyStay\ClassHotelHappyStay\obj\Debug\ClassHotelHappyStay.vbproj.CoreCompileInputs.cache
+C:\Users\mario\Documents\2020_1\programacion_lll\HotelHappyStay\ClassHotelHappyStay\obj\Debug\ClassHotelHappyStay.dll
+C:\Users\mario\Documents\2020_1\programacion_lll\HotelHappyStay\ClassHotelHappyStay\obj\Debug\ClassHotelHappyStay.xml
+C:\Users\mario\Documents\2020_1\programacion_lll\HotelHappyStay\ClassHotelHappyStay\obj\Debug\ClassHotelHappyStay.pdb

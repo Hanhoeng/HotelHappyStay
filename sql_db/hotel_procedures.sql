@@ -27,7 +27,7 @@ go
 
 create procedure validate_user(@name varchar(255), @pswd varchar(255)) as
 begin
-	return select id, type from users where name=@name and pswd=@pswd;
+	select id, type from users where name=@name and pswd=@pswd;
 end
 go
 
@@ -40,7 +40,7 @@ go
 
 create procedure get_time_stamp(@user_id integer) as
 begin
-	return select * from time_stamp where user_id=@user_id;
+	select * from time_stamp where user_id=@user_id;
 end
 go
 
@@ -71,13 +71,13 @@ go
 
 create procedure get_reservacion_by_huesped(@id integer) as
 begin
-	return select * from reservacion where huesped_id=@id;
+	select * from reservacion where huesped_id=@id;
 end
 go
 
 create procedure get_reservacion_by_date(@in_date datetime, @out_date datetime) as
 begin
-	return select * from reservacion where in_date=@in_date and out_date=@out_date;
+	select * from reservacion where in_date=@in_date and out_date=@out_date;
 end
 go
 
@@ -144,6 +144,7 @@ end
 go
 
 drop procedure if exists get_habitacion;
+drop procedure if exists get_habitacion_avalability;
 drop procedure if exists create_habitacion;
 drop procedure if exists delete_habitacion;
 drop procedure if exists modify_habitacion;
@@ -157,7 +158,7 @@ go
 
 create procedure get_habitacion_avalability(@id integer, @check_in datetime, @check_out datetime) as
 begin
-	return select * from reservacion where hab_id=@id and (
+	select * from reservacion where hab_id=@id and (
     @check_in between in_date and out_date
     OR
     @check_out between in_date and out_date

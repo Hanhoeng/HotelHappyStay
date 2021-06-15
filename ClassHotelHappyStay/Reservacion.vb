@@ -86,7 +86,7 @@ Public Class Reservacion
     End Property
 
     Public Function ReservacionConsultaHuesped() As Boolean
-        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cnx As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.get_reservacion_by_huesped", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         Dim stat, obser As String
@@ -126,7 +126,7 @@ Public Class Reservacion
         End If
     End Function
     Public Function ReservacionConsultaFecha() As Boolean
-        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cnx As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.get_reservacion_by_date", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         Dim stat, obser As String
@@ -168,7 +168,7 @@ Public Class Reservacion
     End Function
     Public Function CreaReservacion() As Boolean
         Dim existe As New Integer
-        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cnx As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.create_reservacion", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add(New SqlParameter("@user_id", _user_id))
@@ -185,7 +185,7 @@ Public Class Reservacion
     End Function
     Public Function ModificaReservacion() As Boolean
         Dim existe As New Integer
-        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cnx As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.modify_reservacion", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add(New SqlParameter("@id", ide))
@@ -203,7 +203,7 @@ Public Class Reservacion
     End Function
     Public Function BajaReservacion() As Boolean
         Dim existe As New Integer
-        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cnx As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.delete_reservacion", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add(New SqlParameter("@id", _ide))

@@ -33,7 +33,7 @@ Public Class Factura
 
     Public Function AltaFactura() As Boolean
         Dim existe As New Integer
-        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cnx As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.create_factura", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add(New SqlParameter("@tipo", tipo))
@@ -45,7 +45,7 @@ Public Class Factura
 
     Public Function BajaFactura() As Boolean
         Dim existe As New Integer
-        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cnx As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.delete_factura", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add(New SqlParameter("@id", id))
@@ -55,7 +55,7 @@ Public Class Factura
     End Function
     Public Function ModificacionFactura() As Boolean
         Dim existe As New Integer
-        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cnx As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.modify_factura", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add(New SqlParameter("@id", id))
@@ -67,7 +67,7 @@ Public Class Factura
     End Function
 
     Public Function FacturaConsulta() As Boolean
-        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cnx As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.get_factura", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         Dim tip As String

@@ -86,6 +86,10 @@
     <Content Include="Images\hotelicon.png" />
     <Content Include="Web.config" />
     <Content Include="WebPages\FacEliminar.aspx" />
+    <Content Include="WebPages\HueNuevo.aspx" />
+    <Content Include="WebPages\HueEliminar.aspx" />
+    <Content Include="WebPages\HueModificar.aspx" />
+    <Content Include="WebPages\HueConsultar.aspx" />
     <Content Include="WebPages\HabConsultar.aspx" />
     <Content Include="WebPages\HabDisponibilidad.aspx" />
     <Content Include="WebPages\HabEliminar.aspx" />
@@ -151,6 +155,34 @@
     </Compile>
     <Compile Include="WebPages\FacNuevo.aspx.vb">
       <DependentUpon>FacNuevo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\HueNuevo.aspx.designer.vb">
+      <DependentUpon>HueNuevo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\HueNuevo.aspx.vb">
+      <DependentUpon>HueNuevo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\HueEliminar.aspx.designer.vb">
+      <DependentUpon>HueEliminar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\HueEliminar.aspx.vb">
+      <DependentUpon>HueEliminar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\HueModificar.aspx.designer.vb">
+      <DependentUpon>HueModificar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\HueModificar.aspx.vb">
+      <DependentUpon>HueModificar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\HueConsultar.aspx.designer.vb">
+      <DependentUpon>HueConsultar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\HueConsultar.aspx.vb">
+      <DependentUpon>HueConsultar.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="WebPages\HabConsultar.aspx.designer.vb">

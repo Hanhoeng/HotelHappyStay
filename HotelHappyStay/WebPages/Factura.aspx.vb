@@ -6,11 +6,11 @@
     End Sub
 
     Protected Sub btnNuevoFac_Click(sender As Object, e As EventArgs) Handles btnNuevoFac.Click
-        Response.Redirect("FacNueva.aspx")
+        Response.Redirect("FacNuevo.aspx")
     End Sub
 
     Protected Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
-        Response.Redirect("FacModifizar.aspx")
+        Response.Redirect("FacModificar.aspx")
     End Sub
 
     Protected Sub btnConsultarFac_Click(sender As Object, e As EventArgs) Handles btnConsultarFac.Click

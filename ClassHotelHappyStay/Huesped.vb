@@ -42,7 +42,7 @@ Public Class Huesped
     Public Function HuespedConsulta(by As String) As Integer
         Dim opcion As String = by
         Dim existe As New Integer
-        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cnx As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         Dim nom, tip As String
         Dim tel, ide As Integer
         Dim pasar As Boolean
@@ -124,7 +124,7 @@ Public Class Huesped
     End Function
     Public Function AltaHuesped() As Boolean
         Dim existe As New Integer
-        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cnx As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.create_huesped", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add(New SqlParameter("@nombre", _Nombre))
@@ -136,7 +136,7 @@ Public Class Huesped
     End Function
     Public Function ModificaHuesped()
         Dim existe As New Integer
-        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cnx As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.modify_huesped", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add(New SqlParameter("@id", _id))
@@ -149,7 +149,7 @@ Public Class Huesped
     End Function
     Public Function BajaHuesped() As Boolean
         Dim existe As New Integer
-        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cnx As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.delete_huesped", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add(New SqlParameter("@id", _id))

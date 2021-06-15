@@ -12,7 +12,7 @@ Public Class InicioSesion
             .pswd = txtContrasena.Text
         End With
         If iniciarSesion.IniciarSesion <> False Then
-            Response.Redirect("MenuModulos.aspx")
+            Response.Redirect("Menu.aspx")
         Else
             MsgBox("Nombre o contraseña incorrecto")
         End If

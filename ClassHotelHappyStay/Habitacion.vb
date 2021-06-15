@@ -41,7 +41,7 @@ Public Class habitacion
     End Property
 
     Public Function HabitacionConsulta() As Boolean
-        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cnx As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.get_habiracion", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         Dim tipHab As String
@@ -69,7 +69,7 @@ Public Class habitacion
     End Function
     Public Function AltaHabitacion() As Boolean
         Dim existe As New Integer
-        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cnx As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.create_habitacion", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add(New SqlParameter("@numero", numero))
@@ -81,7 +81,7 @@ Public Class habitacion
 
     Public Function BajaHabitacion() As Boolean
         Dim existe As New Integer
-        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cnx As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.delete_habitacion", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add(New SqlParameter("@id", id))
@@ -91,7 +91,7 @@ Public Class habitacion
     End Function
     Public Function ModificacionHabitacion() As Boolean
         Dim existe As New Integer
-        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cnx As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.modify_habitacion", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add(New SqlParameter("@id", id))
@@ -104,7 +104,7 @@ Public Class habitacion
     End Function
     Public Function Disponibilidad(check_in As DateTime, check_out As DateTime) As Boolean
         Dim estado As Boolean
-        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cnx As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.get_habitacion_avalability", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add(New SqlParameter("@id", id))

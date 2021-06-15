@@ -8,7 +8,7 @@ Public Class HabModificar
     End Sub
 
     Protected Sub btnRegresar_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click
-        Response.Redirect("Habitacion.aspx")
+        Response.Redirect("Habitaciones.aspx")
     End Sub
 
     Protected Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click

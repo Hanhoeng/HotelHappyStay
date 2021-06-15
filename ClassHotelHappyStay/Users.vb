@@ -40,9 +40,9 @@ Public Class Users
         End Set
     End Property
 
-    Public Function IniciarSesion() As Integer
+    Public Function IniciarSesion() As Boolean
         Dim existe As New Integer
-        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cnx As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.validate_user", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add(New SqlParameter("@name", _name))
@@ -50,23 +50,27 @@ Public Class Users
         cnx.Open()
         Dim leer As SqlDataReader
         leer = cmd.ExecuteReader
+        Dim xnc As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         If leer.Read() Then
             _id = leer(0).ToString()
-            _type = leer(0).ToString()
+            _type = leer(1).ToString()
 
-            Dim cmd2 As New SqlCommand("dbo.start_time_stamp", cnx)
+            Dim cmd2 As New SqlCommand("dbo.start_time_stamp", xnc)
             cmd2.CommandType = CommandType.StoredProcedure
             cmd2.Parameters.Add(New SqlParameter("@user_id", _id))
+            xnc.Open()
             cmd2.ExecuteScalar()
             cnx.Close()
-            Return _type
+            xnc.Close()
+            Return True
         Else
             Return False
             cnx.Close()
+            xnc.Close()
         End If
     End Function
     Public Function CerrarSesion() As Integer
-        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cnx As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.end_time_stamp", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add(New SqlParameter("@user_id", _id))
@@ -76,7 +80,7 @@ Public Class Users
     End Function
     Public Function AltaUsuario() As Boolean
         Dim existe As New Integer
-        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cnx As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.create_user", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add(New SqlParameter("@name", _name))
@@ -88,7 +92,7 @@ Public Class Users
     End Function
     Public Function ModificaUsuario() As Boolean
         Dim existe As New Integer
-        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cnx As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.modify_user", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add(New SqlParameter("@id", _name))
@@ -100,7 +104,7 @@ Public Class Users
     End Function
     Public Function BajaUsuario() As Boolean
         Dim existe As New Integer
-        Dim cnx As New SqlConnection("Server=DESKTOP-OECLD19\SQLEXPRESS; database=ProyectoFinal; Integrated Security=True;")
+        Dim cnx As New SqlConnection("Server=DESKTOP-SLN622U; database=Hotel; Integrated Security=True;")
         Dim cmd As New SqlCommand("dbo.delete_user", cnx)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add(New SqlParameter("@id", _id))
